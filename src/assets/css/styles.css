@@ -1,0 +1,524 @@
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+    /*FUENTES*/ 
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    
+}
+
+#header{
+   height: 120px; 
+   width: 100%;
+   border-bottom: 1px solid #ccc;
+   background: white;
+   border-top: 4px solid rgb(226, 18, 18);
+
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+#logo{
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 30px;
+}
+
+#logo img{
+    display: block;
+    float:left;
+    height: 60px;
+    margin-top: -9px;
+    margin-right: 7px;
+    animation: latir infinite 30s linear;
+}
+
+/* keyframes para animacion logo*/
+@keyframes latir{
+   0%{
+       transform: scale(1, 1);
+   } 
+
+   50%{
+       transform: scale(1.03, 1.03);
+   }
+
+   55%{
+       transform: scale(0.97, 0.97);
+   }
+
+   100%{
+       transform: scale(1, 1);
+   }
+}
+
+#brand{
+    display: block;
+    margin: 0px;
+    float: left;
+
+}
+
+#menu{
+    width: 70%;
+    font-size: 18px;
+    float: right;
+}
+
+#menu ul{
+    line-height: 70px;
+    width: 60%;
+    float: right;
+}
+
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 44px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#menu a{
+    text-decoration: none;
+    color:#444;
+    transition: 300ms all;
+}
+
+#menu a:hover,
+.active{
+    color: rgb(255, 0, 0) !important ;
+}
+
+.year-blue{
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    width: 117px;
+    text-align: center;
+
+}
+
+.year-red{
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 7px;
+    width: 117px;
+    text-align: center;
+
+}
+
+#slider{
+    width: 100%;
+    height: 350px;
+    /*line-height: 320px;*/
+    color: white;
+    text-shadow: 0px 0px 5px #444;
+    
+    /*DEGRADADO CSS*/
+    background-image: linear-gradient(
+  220deg,
+  hsl(348deg 98% 25%) 0%,
+  hsl(348deg 98% 27%) 11%,
+  hsl(347deg 98% 29%) 22%,
+  hsl(347deg 98% 32%) 33%,
+  hsl(347deg 98% 34%) 44%,
+  hsl(347deg 97% 35%) 56%,
+  hsl(346deg 97% 37%) 67%,
+  hsl(346deg 97% 39%) 78%,
+  hsl(346deg 97% 40%) 89%,
+  hsl(346deg 97% 42%) 100%
+);
+}
+
+#slider h1{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.btn-white{
+    display: block;
+    background: white;
+    color: #444;
+    padding: 18px;
+    width: 95px;
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 30px;
+    border-radius: 6px;
+    transition: 300ms all;
+}
+
+.btn-white:hover{
+    background-color: rgb(65, 4, 4);
+    color: white;
+}
+
+#slider.slider-small{
+    height: 150px;
+}
+
+#slider.slider-small h1{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 45px;
+}
+
+#content{
+    width: 70%;
+    float: left;
+    min-height: 650px;
+    margin-right: 20px;
+}
+
+#content h2{
+    color:rgb(54, 54, 54);
+    
+}
+
+#sidebar{
+    width: 25%;
+    float: left;
+    
+}
+
+.sidebar-item{
+    background: #f7f7f7;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-item h3{
+   text-transform: uppercase; 
+   font-size: 14px;
+   margin: 0px;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+   border-bottom: 2px solid rgb(202, 198, 198);
+}
+
+.sidebar-item .btn{
+    margin-top: 10px;
+    margin: 0px auto;
+}
+
+.btn{
+    display: block;
+    background: black;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    max-width: 110px;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-success{
+    background-color: rgb(223, 27, 27);
+}
+
+.btn-success:hover{
+    background-color: rgb(65, 4, 4) ;
+}
+
+.btn-warning{
+    background: rgb(230, 153, 10);
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-danger{
+    background: rgb(179, 8, 8);
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-warning:hover,
+.btn-danger:hover{
+    transition: all 300ms;
+    opacity: 0.8;
+}
+
+.buttons{
+     margin-top: 30px;
+}
+
+.mid-form{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.mid-form label{
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea{
+    width: 100%;
+    min-height: 30px;
+    border: 2px solid rgb(202, 198, 198);
+    margin-bottom: 12px;
+    padding: 3px;
+    transition: 300ms all;
+}
+
+#default.container label.btn.btn-primary.btn-sm.afu-select-btn{
+    display: block !important;
+    width: 100% !important;
+    max-width: 80% !important;
+    background: rgb(236, 70, 10);
+    
+}
+
+.image-thumb img{
+     width: 200px;
+}
+
+input[type="text"]:focus,
+textarea:focus{
+box-shadow: 0px 0px 5px rgb(116, 113, 113) inset;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 270px;
+}
+
+.radiobuttons{
+margin-top: 20px;
+float: left;
+margin-bottom: 20px;
+}
+
+
+
+#footer{
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    line-height: 67px;
+    color:rgb(54, 54, 54)
+}
+
+#footer p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.article-item{
+    width: 100%;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.article-item .image-wrap{
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #eee
+}
+
+.article-item .image-wrap img{
+    height: 100%;
+    text-align: center;
+}
+
+.article-item h2{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px ;
+}
+
+.article-item .date{
+    display: block;
+    width: 100%;
+    color:rgb(119, 118, 118);
+}
+
+.article-item a{
+    display: block;
+    width: 100%;
+    color: #444;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.article-item a:hover{
+   text-decoration: underline;
+}
+
+.subheader{
+    font-size: 35px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.article-detail .image-wrap{
+  float: none;
+  width: 100%;
+  height: 350px;
+}
+
+.article-detail .image-wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.article-detail .subheader{
+    margin-top: 18px;
+    margin-bottom: 5px ;
+    border: none;
+}
+
+#comments{
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+/*RESPONSIVE*/
+/*Desde el ancho 0 hasta 1347px de pantalla*/
+@media (max-width: 1347px){
+/*Se ejecuta este estilo*/
+.center{
+    width: 85%;
+}
+}
+
+@media (max-width: 1175px){
+   .center{
+       width: 95%;
+   } 
+
+   #menu ul{
+       width: auto;
+   }
+}
+
+@media (max-width: 866px){
+   #logo{
+       float: none;
+       display: inline-flex;
+       width: 240px;
+       margin: 0px auto;
+       margin-top: 17px;
+       
+   }
+
+   #menu,
+   #menu ul{
+       clear: both;
+       float: none;
+       margin: auto;
+       line-height: 40px;
+       
+   }
+
+   #brand{
+       float: none;
+   }
+
+   #content{
+      float: none;
+      width: 100%; 
+   }
+
+   #sidebar{
+       float: none;
+       width: 60%;
+       margin: 0px auto;
+       margin-bottom: 70px;
+   }
+
+   #slider h1{
+       padding-top: 105px;
+       font-size: 29px;
+   }
+
+   .mid-form{
+       width: 70%;
+   }
+}
+
+@media (max-width: 699px){
+     #header{
+         min-height: 130px;
+         overflow: hidden;
+         
+     }
+
+     #menu,
+     #menu ul{
+         line-height: 40px;
+     }
+
+     #menu ul li{
+         margin-left: 4px;
+         margin-right: 4px;
+     }
+
+     #slider{
+         height: 170px;
+     }
+
+     #slider h1{
+        font-size: 19px;
+        padding-top: 20px;
+     }
+
+     #slider .btn-white{
+         margin-top: 20px;
+     }
+
+     #slider.slider-small{
+         height: 100px;
+     }
+
+     #slider.slider-small h1{
+         padding-top: 35px;
+     }
+}

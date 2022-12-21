@@ -1,0 +1,57 @@
+
+
+<div class="center">
+  <section id="content">
+
+    <h1 class="subheader">{{page_title}}</h1>
+
+    <form class="mid-form" #articleForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="title">Titulo:</label>
+          <input type="text" name="title" #title="ngModel" [(ngModel)]="article.title"  required  placeholder="Ingresa tu nombre..."/>
+
+          <small *ngIf="!title.valid && title.touched">
+            El título no es válido!!
+          </small>
+      </div>
+
+      <div class="form-group">
+          <label for="content">Contenido:</label>
+          <textarea name="content" #content="ngModel" [(ngModel)]="article.content" required></textarea>
+ 
+          <small *ngIf="!content.valid && content.touched">
+           El contenido no es válido!!
+         </small>
+      </div>
+
+      <div class="form-group">
+
+        <div class="image-thumb" *ngIf="is_edit">
+          
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMzC_FoICsHYhnBW5gDpRSEtktNzXhl6IiA&usqp=CAU" alt="paisaje" />
+         
+        </div>
+        
+        <angular-file-uploader
+      [config]="afuConfig"
+      (ApiResponse)="imageUpload($event)">
+     </angular-file-uploader>
+      </div>
+
+
+      
+
+
+     
+
+     <div class="clearfix"></div>
+
+     <input type="submit" value="Guardar" class="btn btn-success" [disabled]="articleForm.invalid" />
+  </form>
+
+ 
+
+  </section>
+
+  <app-sidebar></app-sidebar>
+</div>
